@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faça seu pedido - Boulangerie Pain d'Or</title>
+    <link rel="stylesheet" href="../assets/css/fazerPedidos.css">
+</head>
+<body>
+    <header>
+        <h1>Boulangerie Pain d'Or</h1>
+        <p>Tradição francesa com o carinho do Brasil</p>
+        <button id="view-cart">Carrinho 🛒</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pães Artesanais</h2>
+            <div class="menu-item">
+                <span>Baguete Clássica</span>
+                <span>R$ 10,00</span>
+                <button class="add-to-cart" data-name="Baguete Clássica" data-price="10">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <span>Pão Integral com Castanhas</span>
+                <span>R$ 15,00</span>
+                <button class="add-to-cart" data-name="Pão Integral com Castanhas" data-price="15">Adicionar</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Doces e Sobremesas</h2>
+            <div class="menu-item">
+                <span>Éclair de Chocolate</span>
+                <span>R$ 12,00</span>
+                <button class="add-to-cart" data-name="Éclair de Chocolate" data-price="12">Adicionar</button>
+            </div>
+            <div class="menu-item">
+                <span>Macaron (Unidade)</span>
+                <span>R$ 6,00</span>
+                <button class="add-to-cart" data-name="Macaron" data-price="6">Adicionar</button>
+            </div>
+        </section>
+        <section>
+          <h2>Sanduíches Especiais</h2>
+          <div class="menu-item">
+              <span>Croque Monsieur</span>
+              <span>R$ 18,00</span>
+              <button class="add-to-cart" data-name="Croque Monsieur" data-price="18">Adicionar</button>
+          </div>
+          <div class="menu-item">
+              <span>Sanduíche Caprese</span>
+              <span>R$ 20,00</span>
+              <button class="add-to-cart" data-name="Sanduíche Caprese" data-price="20">Adicionar</button>
+          </div>
+          <div class="menu-item">
+              <span>Sanduíche de Salmão Defumado</span>
+              <span>R$ 25,00</span>
+              <button class="add-to-cart" data-name="Sanduíche de Salmão Defumado" data-price="25">Adicionar</button>
+          </div>
+      </section>
+      <section>
+        <h2>Pratos Rápidos</h2>
+        <div class="menu-item">
+            <span>Quiche de Lorraine</span>
+            <span>R$ 22,00</span>
+            <button class="add-to-cart" data-name="Quiche de Lorraine" data-price="22">Adicionar</button>
+        </div>
+        <div class="menu-item">
+            <span>Salada Niçoise</span>
+            <span>R$ 28,00</span>
+            <button class="add-to-cart" data-name="Salada Niçoise" data-price="28">Adicionar</button>
+        </div>
+        <div class="menu-item">
+            <span>Crepe de Presunto e Queijo</span>
+            <span>R$ 18,00</span>
+            <button class="add-to-cart" data-name="Crepe de Presunto e Queijo" data-price="18">Adicionar</button>
+        </div>
+    </section>
+    <section>
+      <h2>Bebidas</h2>
+      <div class="menu-item">
+          <span>Café Espresso</span>
+          <span>R$ 8,00</span>
+          <button class="add-to-cart" data-name="Café Espresso" data-price="8">Adicionar</button>
+      </div>
+      <div class="menu-item">
+          <span>Suco Natural</span>
+          <span>R$ 10,00</span>
+          <button class="add-to-cart" data-name="Suco Natural" data-price="10">Adicionar</button>
+      </div>
+  </section>
+    </main>
+
+    <!-- Carrinho Pop-up -->
+    <div id="cart-popup" class="hidden">
+        <h2>Seu Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: R$ 0,00</p>
+        <button id="checkout">Finalizar Compra</button>
+        <button id="close-cart">Fechar</button>
+    </div>
+
+    <script src="../assets/js/fazerPedidos.js"></script>
+</body>
+</html>
