@@ -1,0 +1,21 @@
+.Mobile{
+    display: none;
+}
+#MenuDesk{
+    margin-right: 1%;
+}
+
+@media screen and (max-width: 480px){
+    .Mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    #MenuDesk{
+        display: none;
+    }
+    .menuButtons{
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+}

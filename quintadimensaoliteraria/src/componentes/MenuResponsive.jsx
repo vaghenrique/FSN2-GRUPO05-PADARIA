@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import LinkA from "./linkA";
-import IconNav from '../Img/iconNavegacao.png';
+import IconNav from '../assets/iconNavegacao.png';
 import Pesquisa from "./Pesquisa";
-import './MenuResponsive.css';
+import '../styles/MenuResponsive.css';
 
 
 function MenuResponsive(){

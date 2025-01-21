@@ -1,0 +1,32 @@
+.menuButtons form{
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: stretch;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.menuButtons form input{
+    background-color: #80000025;
+    color: #000;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: calc(80% - 8px);
+    height: 32px;
+    padding: 8px;
+    border: none;
+}
+.menuButtons form button{
+    background-color: #800000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    width: calc(20% - 8px);
+}
+.menuButtons form button img{
+    height: 22px;
+}

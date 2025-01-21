@@ -1,6 +1,6 @@
 import React from "react";
 import LinkA from "./linkA";
-import './Header.css';
+import '../styles/Header.css';
 import Pesquisa from "./Pesquisa";
 import MenuResponsive from "./MenuResponsive";
 import logo from '../logo.svg';

@@ -1,5 +1,5 @@
 import React from "react";
-import './LinkA.css';
+import '../styles/LinkA.css';
 
 function LinkA({Href, text, cor}){
     return(

@@ -1,0 +1,16 @@
+
+.buttonLogin{
+    background-color: #800000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: 0.6s;
+}
+.buttonLogin:hover{
+    background-color: #bb1313;
+    transition: 0.6s;
+}

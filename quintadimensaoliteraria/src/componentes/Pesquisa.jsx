@@ -1,7 +1,7 @@
 import React from "react";
-import iconPesquisa from '../Img/icon-search.png';
+import iconPesquisa from '../assets/icon-search.png';
 import BotaoL from "./BotaoL";
-import './Pesquisa.css';
+import '../styles/Pesquisa.css';
 
 function Pesquisa(){
     return(

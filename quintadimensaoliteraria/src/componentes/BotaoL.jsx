@@ -1,5 +1,5 @@
 import React from "react";
-import './BotaoL.css';
+import '../styles/BotaoL.css';
 
 function BotaoL(){
     return(
