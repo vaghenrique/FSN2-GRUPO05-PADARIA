@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&display=swap');
+
+.Hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0px 20px 0px;
+}
+.Hero img{
+    width: 55%;
+}
+.text{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+}
+.text h1{
+    font-size: 5vw;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    color: #382424;
+    
+    text-transform: uppercase;
+}
+.text p{
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;;
+    color: #b1b1b1 ;
+}
+
+@media screen and (max-width: 900px){
+    .Hero{
+        flex-direction: column;
+    }
+    .Hero img{
+        width: 90%;
+    }
+    .text{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 580px){
+    .Hero img{
+        width: 98%;
+    }
+    .text{
+        width: 80%;
+    }
+    .text h1{
+        font-size: 2.6rem;
+    }
+}

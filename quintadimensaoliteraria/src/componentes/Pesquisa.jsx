@@ -1,5 +1,5 @@
 import React from "react";
-import iconPesquisa from '../assets/icon-search.png';
+import iconPesquisa from '../assets/img/icon-search.png';
 import BotaoL from "./BotaoL";
 import '../styles/Pesquisa.css';
 
@@ -10,7 +10,7 @@ function Pesquisa(){
                     <input type="text" name="Pesquias" placeholder="Digite aqui"/>
                     <button> <img src={iconPesquisa} alt="icon-pesquisas"/> </button>
                 </form>
-                <BotaoL/>
+                <BotaoL label="Login"/>
             </div>
     );
 }

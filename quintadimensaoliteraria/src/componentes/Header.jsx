@@ -16,8 +16,8 @@ function Header(){
                 </div>
 
                 <LinkA Href="/" text="Home" cor="claro" />
-                <LinkA Href="/" text="OtherPage" cor="claro" />
-                <LinkA Href="/" text="OtherPage2" cor="claro" />
+                <LinkA Href="/OtherPage" text="OtherPage" cor="claro" />
+                <LinkA Href="/OtherPage2" text="OtherPage2" cor="claro" />
             </div>
             <MenuResponsive/>
 

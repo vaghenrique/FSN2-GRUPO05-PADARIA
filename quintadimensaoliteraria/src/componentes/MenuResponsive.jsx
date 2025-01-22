@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import LinkA from "./linkA";
-import IconNav from '../assets/iconNavegacao.png';
+import IconNav from '../assets/img/iconNavegacao.png';
 import Pesquisa from "./Pesquisa";
 import '../styles/MenuResponsive.css';
 
