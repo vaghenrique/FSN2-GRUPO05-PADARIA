@@ -1,9 +1,12 @@
 import React from "react";
 import LinkA from "./linkA";
 import '../styles/Header.css';
-import Pesquisa from "./Pesquisa";
+import BotaoL from "./BotaoL";
 import MenuResponsive from "./MenuResponsive";
-import logo from '../logo.svg';
+import logo from '../assets/img/ImgLogoSbg.png';
+import count from '../assets/img/iconPerfil.png';
+import shop from '../assets/img/iconCarShop.png';
+import settings from '../assets/img/iconSettings.png';
 
 
 function Header(){
@@ -21,8 +24,12 @@ function Header(){
             </div>
             <MenuResponsive/>
 
-            <div id="MenuDesk">
-                <Pesquisa/>
+            <div id="MenuDesk" className="cont-buttons">
+                <button className="buttons"><img src={count} alt="icon-perfil" /></button>
+                <button className="buttons"><img src={shop} alt="icon-shopping cart" /></button>
+                <button className="buttons"><img src={settings} alt="icon-configuracoes" /></button>
+                <BotaoL label="Login"/>
+                
             </div>
         </header>
     );

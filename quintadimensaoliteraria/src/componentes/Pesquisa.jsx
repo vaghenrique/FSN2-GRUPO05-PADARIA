@@ -5,12 +5,13 @@ import '../styles/Pesquisa.css';
 
 function Pesquisa(){
     return(
-        <div className="menuButtons">
+        <div className="Pesquisa">
                 <form>
-                    <input type="text" name="Pesquias" placeholder="Digite aqui"/>
-                    <button> <img src={iconPesquisa} alt="icon-pesquisas"/> </button>
+                    <input type="text" name="Pesquias" placeholder="Buscar Livros . . ."/>
+                    <button>  <img src={iconPesquisa} alt="icon pesquisa" />    </button>
+                    {/* <button> <img src={iconPesquisa} alt="icon-pesquisas"/> </button> */}
                 </form>
-                <BotaoL label="Login"/>
+                
             </div>
     );
 }

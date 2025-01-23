@@ -3,14 +3,22 @@
     background-color: #800000;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 13px 20px;
-    border-radius: 5px;
-    font-size: 18px;
+    padding: 12px 18px;
+    opacity: 0.5;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    border: 3px solid #800000;
     cursor: pointer;
-    border: none;
     transition: 0.6s;
 }
 .buttonLogin:hover{
-    background-color: #bb1313;
+    opacity: 1.5;
     transition: 0.6s;
+}
+
+@media screen and (max-width: 450px){
+    .buttonLogin{
+        font-size: 1rem;
+        padding: 8px 14px;
+    }
 }
