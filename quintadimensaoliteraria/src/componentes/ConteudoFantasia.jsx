@@ -1,27 +1,19 @@
 import React from "react";
-import Hero from "../componentes/Hero";
-import Pesquisa from "../componentes/Pesquisa";
-import CardPromo from "../componentes/CardPromo";
-import Carroussel from "../componentes/Carroussel";
-import ConteudoFantasia from "../componentes/ConteudoFantasia";
+import CardPromo from "./CardPromo";
 
 import L01 from '../assets/img/L01.png';
 import L02 from '../assets/img/L02.png';
+import L03 from '../assets/img/L03.png';
+import L04 from '../assets/img/L04.png';
 import L05 from '../assets/img/L05.png';
 import L06 from '../assets/img/L06.png';
 
-import '../styles/Home.css';
+import '../styles/Carroussel.css';
 
-function Home(){
+function ConteudoFantasia(){
     return(
-        <div>
-            <Hero 
-                titulo="5ª Geração literária"
-                texto="Aqui seus sonhos tomam forma, suas viajens e jornadas se prolongam e tudo mais que conseguir imaginar!"
-            />
-            <Pesquisa/>
-            <div className="Cards">
-                <CardPromo 
+        <div className="Carroussel">
+             <CardPromo 
                     titulo="The Hobbit"
                     descricao="Uma jornada inesperado pelo universo de Tolkien, junte-se a Bilbo e à compania."
                     preco="R$ 50,00"
@@ -35,6 +27,18 @@ function Home(){
                 />
                 <CardPromo 
                     titulo="Harry Potter"
+                    descricao="E a Pedra Filosofal, o início de uma das sagas sagas mais aplaudidas"
+                    preco="R$ 20,00"
+                    imagem={L03}
+                />
+                <CardPromo 
+                    titulo="Harry Potter"
+                    descricao="E a câmara secreta. Quais os perigos que aguardam Harry para o segundo ano letivo?"
+                    preco="R$ 25,00"
+                    imagem={L04}
+                />
+                <CardPromo 
+                    titulo="Harry Potter"
                     descricao="Harry entra em contato com o passado de sua família, mas não é o que ele esperava."
                     preco="R$ 20,00"
                     imagem={L05}
@@ -45,16 +49,8 @@ function Home(){
                     preco="R$ 50,00"
                     imagem={L06}
                 />
-            </div>
-
-            <Carroussel titulo="Fantasia" 
-                conteudo={<ConteudoFantasia/>}
-            />
-                
-            
-
         </div>
     );
 }
 
-export default Home;
+export default ConteudoFantasia;

@@ -1,0 +1,13 @@
+.Cards{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px){
+    .Cards{
+        flex-direction: column;
+    }
+}

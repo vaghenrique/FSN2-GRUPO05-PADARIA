@@ -4,8 +4,8 @@ import '../styles/CardPromo.css';
 
 function CardPromo({titulo, descricao, preco, imagem}){
     return(
-        <div class="card">
-            <div class="cabecalho">
+        <div className="card">
+            <div className="cabecalho">
                 <img src={imagem} alt="Imagem Livro"/>
             </div>
             <br/>
@@ -13,7 +13,7 @@ function CardPromo({titulo, descricao, preco, imagem}){
             <br/>
             <p>{descricao}</p>
             <br/>
-            <button>{preco} <img src={addCart} /> </button>
+            <button>{preco} <img src={addCart} alt="Icone shopping cart" /> </button>
             <br/>
             <br/>
         </div>
