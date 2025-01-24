@@ -1,6 +1,5 @@
 import React from "react";
 import iconPesquisa from '../assets/img/icon-search.png';
-import BotaoL from "./BotaoL";
 import '../styles/Pesquisa.css';
 
 function Pesquisa(){

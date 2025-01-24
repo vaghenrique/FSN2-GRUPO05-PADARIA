@@ -1,50 +1,99 @@
-import React, {useRef} from "react";
+import React from "react";
+import CardPromo from "./CardPromo";
+
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";   
 import '../styles/Carroussel.css';
 
-function Carroussel({titulo, conteudo}){
-    const livros = document.querySelectorAll(".card");
-    var index = 0
-    const max = livros.length;
 
-    function MoveToLivro(isRight){
-        
+import '../styles/Carroussel.css';
 
-        if (isRight){
-            index ++;
-        } else{
-            index --;
-        }
+function Carroussel({Data, titulo}){
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "transparent", filter: "invert(100%)", transform: "scale(2) translateX(-20px)", opacity: "0.5" }}
+            onClick={onClick}
+          />
+        );
+      }
+      
+      function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+          <div
+            className={className}
+            style={{ ...style, display: "block", background: "transparent", filter: "invert(100%)", transform: "scale(2) translateX(-10px)", opacity: "0.5" }}
+            onClick={onClick}
+          />
+        );
+      }
 
-        if(index >= max-1){
-            index = 0;
-        }
-        if (index <= 0){
-            index = max-1;
-        }
-        
-        // const RefLivro = useRef(livros[index]);
 
-        // RefLivro.current.scrollIntoView({
-        //     behavior: "smooth",
-        //     inline: "end",
-        //     block: "nearest"
-        // })
-    }
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 860,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 550,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+    };
 
     return(
         <div>
             <h1 className="titulo">{titulo}</h1>
-            <section className="Carroussel-Conteiner">
-
-                <button className="control left" onClick={() => MoveToLivro(false)}> &#10092; </button>
+        <div className="conteiner">
+            
+        <div className="slider">
+            <Slider {...settings}>
+                {Data.map((d) => (
+                    <CardPromo className="cardC"
+                        key={d.id}
+                        titulo={d.titulo}
+                        descricao={d.descricao}
+                        imagem={d.imagem}
+                        preco={d.preco}
+                    />
+                ))}
+            </Slider>
                 
-                {conteudo}
-                
-
-                <button className="control" onClick={() => MoveToLivro(true)}> &#10093; </button>
-            </section>
+        </div>
+        </div>
         </div>
     );
 }
+
 
 export default Carroussel;
