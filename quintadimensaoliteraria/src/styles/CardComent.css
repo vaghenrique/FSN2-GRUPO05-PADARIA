@@ -1,0 +1,58 @@
+.CardComent{
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    gap: 20px;
+}
+.CardComent h1{
+    font-size: 3rem;
+}
+.CardComent p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #0000009c;
+}
+.CardComent hr{
+    border: none;
+    width: 40%;
+    height: 5px;
+    margin-top: -10px;
+    background-color: #800000;
+}
+.CardComent span{
+    position: absolute;
+    font-size: 10rem;
+    color: #80000085;
+}
+.CardComent span:nth-child(1){
+    top: -100px;
+    left: 10px;
+}
+.CardComent span:nth-child(2){
+    top: -100px;
+    right: 10px;
+}
+
+@media screen and (max-width: 340px){
+    .CardComent h1{
+        font-size: 1rem;
+    }
+    .CardComent h1.title{
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    .CardComent p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.8rem;
+        color: #0000009c;
+    }
+    .CardComent span{
+        font-size: 7rem;
+    }
+}

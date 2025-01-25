@@ -1,5 +1,6 @@
 import React from "react";
 import CardPromo from "./CardPromo";
+import Titulo from "./titulo";
 
 import Slider from "react-slick";
 
@@ -72,8 +73,13 @@ function Carroussel({Data, titulo}){
     };
 
     return(
-        <div>
-            <h1 className="titulo">{titulo}</h1>
+        <div className="t" >
+            <br/>
+            <br/> 
+            <br/> 
+            <br/>
+            <br/>
+            <Titulo text={titulo} />
         <div className="conteiner">
             
         <div className="slider">

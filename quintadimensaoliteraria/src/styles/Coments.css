@@ -1,0 +1,22 @@
+.slider-coments{
+    width: 98%;
+    margin-top: 20px;
+}
+.slider-coments h1{
+    font-size: 3rem;
+}
+.hrR{
+    border: none;
+    width: 40%;
+    height: 5px;
+    margin-top: -10px;
+    background-color: #800000;
+    margin-left: 30%;
+}
+
+@media screen and (max-width: 375px){
+    .slider-coments h1{
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+}
