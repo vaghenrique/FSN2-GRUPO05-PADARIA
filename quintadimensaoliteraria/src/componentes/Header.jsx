@@ -1,8 +1,9 @@
 import React from "react";
 import LinkA from "./linkA";
 import '../styles/Header.css';
-import BotaoL from "./BotaoL";
 import MenuResponsive from "./MenuResponsive";
+import ModalLogin from "./ModalLogin";
+
 import logo from '../assets/img/ImgLogoSbg.png';
 import count from '../assets/img/iconPerfil.png';
 import shop from '../assets/img/iconCarShop.png';
@@ -28,7 +29,8 @@ function Header(){
                 <button className="buttons"><img src={count} alt="icon-perfil" /></button>
                 <button className="buttons"><img src={shop} alt="icon-shopping cart" /></button>
                 <button className="buttons"><img src={settings} alt="icon-configuracoes" /></button>
-                <BotaoL label="Login"/>
+
+                <ModalLogin/>
                 
             </div>
         </header>

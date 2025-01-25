@@ -1,0 +1,11 @@
+.Direitos{
+    width: 100%;
+    background-color: #000;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Direitos p{
+    color: #fff;
+}

@@ -4,6 +4,7 @@ import Pesquisa from "../componentes/Pesquisa";
 import CardPromo from "../componentes/CardPromo";
 import Carroussel from "../componentes/Carroussel";
 import Coments from "../componentes/Coments";
+import CardInfo from "../componentes/CardInfo";
 
 import L01 from '../assets/img/L01.png';
 import L02 from '../assets/img/L02.png';
@@ -28,14 +29,19 @@ import LA05 from '../assets/img/LA05.png';
 import LA06 from '../assets/img/LA06.png';
 import LA07 from '../assets/img/LA07.png';
 
+import Icon1 from '../assets/img/icon-BookCard01.png';
+import Icon2 from '../assets/img/icon-BookCard02.png';
+import Icon3 from '../assets/img/icon-BookCard03.png';
+
 
 import '../styles/Home.css';
 
 function Home(){
     return(
         <div>
+
             <Hero 
-                titulo="5ª Geração literária"
+                titulo="5ª Dimensão literária"
                 texto="Aqui seus sonhos tomam forma, suas viajens e jornadas se prolongam e tudo mais que conseguir imaginar!"
             />
             <Pesquisa/>
@@ -86,7 +92,29 @@ function Home(){
             <Coments
                 Data={ComentsData}
             />
-            {/* <CardComent nome="Alisson" comentario="Nem tudo de reluz é ouro... Lorem Ipsun Dolor sit amet consectetur adcipieng labor. Ipsun dolor sit amet" /> */}
+
+            <div className="cards-info">
+                <CardInfo
+                    img={Icon1}
+                    title="Recursos"
+                    text="Nossa página está repleta de funcionalidade que visam o melhor para os usuários, além disso, presamos muito pelo estado dos livros"
+                    label="Button Card"
+                />
+
+                <CardInfo
+                    img={Icon2}
+                    title="Público"
+                    text="Livros para todas as idades e gostos. Maior facilidade e segurança para os pais no cuidado com o conteúdo visto pelos filhos"
+                    label="Saiba Mais"
+                />
+
+                <CardInfo
+                    img={Icon3}
+                    title="E-Books"
+                    text="Para aqueles que desejam o livro o mais depressa possível ou para aqueles que querem encontrar o precinho mais em conta ainda"
+                    label="Button Card"
+                />
+            </div>
         </div>
     );
 }

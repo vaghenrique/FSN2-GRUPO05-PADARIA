@@ -1,9 +1,9 @@
 import React from "react";
 import '../styles/BotaoL.css';
 
-function BotaoL({label}){
+function BotaoL({label, click}){
     return(
-        <button className="buttonLogin">{label}</button>
+        <button onClick={click} className="buttonLogin">{label}</button>
     );
 }
 

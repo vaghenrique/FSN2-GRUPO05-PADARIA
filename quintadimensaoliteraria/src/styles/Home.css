@@ -7,10 +7,31 @@
     width: 100%;
 }
 
+.cards-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 120px 0px 120px 0px;
+    background-color: #200101;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 920px){
+    .cards-info{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 480px){
     .Cards{
         flex-direction: column;
         align-items: center;
         
+    }
+    .cards-info{
+        flex-direction: column;
     }
 }
