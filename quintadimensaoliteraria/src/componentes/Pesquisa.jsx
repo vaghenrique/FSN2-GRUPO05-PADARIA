@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import iconPesquisa from '../assets/img/icon-search.png';
 import { GeneralData } from "../assets/Data/GeneralData";
 import CardPromo from "./CardPromo";
@@ -6,7 +6,7 @@ import CardPromo from "./CardPromo";
 import '../styles/Pesquisa.css';
 
 function Pesquisa(){
-    const [pesquisa, setpesquisa] = React.useState('');
+    const [pesquisa, setpesquisa] = useState('');
 
     const pesquisaLowerCase = typeof pesquisa === 'string' ? pesquisa.toLowerCase() : '';
 

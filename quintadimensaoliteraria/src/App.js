@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './componentes/Header';
 import Home from './pages/Home';
+import OtherPage from './pages/OtherPage';
 import Footer from './componentes/Footer';
 import Direitos from './componentes/Direitos';
 import './App.css';
@@ -22,7 +23,7 @@ function App() {
         <Header />
         <Routes >
           <Route path='/' element={<Home/>}/>
-          <Route path='/OtherPage' element={<Home/>}/>
+          <Route path='/OtherPage' element={<OtherPage/>}/>
           <Route path='/OtherPage2' element={<Home/>}/>
         </Routes>
         <Footer

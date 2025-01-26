@@ -12,6 +12,13 @@ import L04 from '../img/L04.png';
 import L05 from '../img/L05.png';
 import L06 from '../img/L06.png';
 import L07 from '../img/L07.png';
+import L08 from '../img/L08.png';
+import L09 from '../img/L09.png';
+import L10 from '../img/L10.png';
+import L11 from '../img/L11.png';
+import L12 from '../img/L12.png';
+import L13 from '../img/L13.png';
+import L14 from '../img/L14.png';
 
 import LA01 from '../img/LA01.png';
 import LA02 from '../img/LA02.png';
@@ -162,6 +169,55 @@ export const GeneralData = [
         descricao: "Viva a incrível história de uma menina e o dragão de gelo que se apresenta",
         preco: "R$ 40,00",
         imagem: LA07
+    },
+    {
+        id: 20,
+        titulo: "Harry Potter 4",
+        descricao: "Estranhamente Harry participará do torneio, mas sobreviver ao torneio não será seu maior medo",
+        preco: "R$ 70,00",
+        imagem: L08
+    },
+    {
+        id: 21,
+        titulo: "Harry Potter 5",
+        descricao: "O mal retornou e a ordem da fenix se ergue para defender Harry e o mundo das trevas",
+        preco: "R$ 50,00",
+        imagem: L09
+    },
+    {
+        id: 22,
+        titulo: "Harry Potter 6",
+        descricao: "Talvez os pedaços do que já foi uma alma sejam a única chance de defesa.",
+        preco: "R$ 60,00",
+        imagem: L10
+    },
+    {
+        id: 23,
+        titulo: "Harry Potter 7",
+        descricao: "O confronto final se armou, Horgwards se ergue perante as forças malígnas",
+        preco: "R$ 100,00",
+        imagem: L11
+    },
+    {
+        id: 24,
+        titulo: "O Senhor dos anéis",
+        descricao: "As duas torres, a jornada dos pequenos hobbits pode ser perigosa demais",
+        preco: "R$ 70,00",
+        imagem: L12
+    },
+    {
+        id: 25,
+        titulo: "O senhor dos anéis",
+        descricao: "Acompanhe o início dessa jornada com o volume: 'A sociedade do Anel'",
+        preco: "R$ 70,00",
+        imagem: L13
+    },
+    {
+        id: 26,
+        titulo: "Percy Jackson",
+        descricao: "Os filhos podem não ser iguais aos pais, mas a aventura não faz essa distinção.",
+        preco: "R$ 30,00",
+        imagem: L14
     }
     
 ]

@@ -5,6 +5,10 @@ import ModalLogin from "./ModalLogin";
 import '../styles/MenuResponsive.css';
 
 
+import count from '../assets/img/iconPerfil.png';
+import shop from '../assets/img/iconCarShop.png';
+import settings from '../assets/img/iconSettings.png';
+
 function MenuResponsive(){
     const [IsVisible, setVisibility] = useState(false);
 
@@ -24,6 +28,12 @@ function MenuResponsive(){
                 <LinkA Href="/" text="OtherPage" cor="claro" />
                 <LinkA Href="/" text="OtherPage2" cor="claro" />
                 <div className="Mobile">
+                    <div>
+                        <button className="buttons"><img src={count} alt="icon-perfil" /></button>&nbsp; &nbsp;
+                        <button className="buttons"><img src={shop} alt="icon-shopping cart" /></button>&nbsp; &nbsp;
+                        <button className="buttons"><img src={settings} alt="icon-configuracoes" /></button>
+                    </div>
+                    <br/>                    
                     <ModalLogin/>
                 </div>
             </div>

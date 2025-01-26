@@ -54,7 +54,7 @@ function Home(){
                 <CardInfo
                     img={Icon1}
                     title="Recursos"
-                    text="Nossa página está repleta de funcionalidade que visam o melhor para os usuários, além disso, presamos muito pelo estado dos livros"
+                    text="Nossa página está repleta de funcionalidades que visam o melhor para os usuários, além disso, presamos muito pelo estado dos livros"
                     label="Button Card"
                 />
 
