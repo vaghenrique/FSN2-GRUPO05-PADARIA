@@ -47,7 +47,7 @@ export const GeneralData = [
     {
         id: 2,
         titulo: "Harry Potter 1",
-        descricao: "E a Pedra Filosofal, o início de uma das sagas sagas mais aplaudidas.",
+        descricao: "E a Pedra Filosofal, o início de uma das sagas mais aplaudidas.",
         preco: "R$ 20,00",
         imagem: L03
     },
@@ -159,7 +159,7 @@ export const GeneralData = [
     {
         id: 18,
         titulo: "As Crônicas de Nárnia",
-        descricao: "Embarque nessa também e não espere por outra oportunidade de viver",
+        descricao: "Embarque nessa aventura também e não espere por outra oportunidade de viver",
         preco: "R$ 60,00",
         imagem: LA06
     },
