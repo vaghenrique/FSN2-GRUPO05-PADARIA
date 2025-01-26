@@ -5,6 +5,11 @@
     flex-wrap: wrap;
     gap: 30px;
     width: 100%;
+    padding-top: 20px;
+}
+.Hide{
+    overflow: hidden;
+    height: 980px;
 }
 
 .cards-info{
