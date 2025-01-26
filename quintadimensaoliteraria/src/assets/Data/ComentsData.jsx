@@ -2,7 +2,7 @@ export const ComentsData = [
     {
         id: 0,
         nome: "Analícia Chaves",
-        coment: "Muito bom que os livros de Machado sempre tem alguma coisa inusitade e que sempre prende a nossa atenção. Esperando pela próxima promoção para pegar um novo livro kk"
+        coment: "Muito bom que os livros de Machado sempre tem alguma coisa inusitada e que sempre prende a nossa atenção. Esperando pela próxima promoção para pegar um novo livro kk"
     },
     {
         id: 1,
@@ -27,7 +27,7 @@ export const ComentsData = [
     {
         id: 5,
         nome: "Juliana",
-        coment: "Gostaria de sugerir que fosse criada um cronograma que mostrasse quanto tempo falta para a próxima promoção, seria bem legal"
+        coment: "Gostaria de sugerir que fosse criado um cronograma que mostrasse quanto tempo falta para a próxima promoção, seria bem legal"
     },
     {
         id: 6,
