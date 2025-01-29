@@ -38,14 +38,14 @@ export const AventuraData = [
     {
         id: 104,
         titulo: "Duna",
-        descricao: "Aproite também as páginas de um dos grandes sucessos da atualidade",
+        descricao: "Aproveite também as páginas de um dos grandes sucessos da atualidade",
         preco: "R$ 50,00",
         imagem: LA05
     },
     {
         id: 105,
         titulo: "As Crônicas de Nárnia",
-        descricao: "Embarque nessa também e não espere por outra oportunidade de viver",
+        descricao: "Embarque nessa aventura também e não espere por outra oportunidade de viver",
         preco: "R$ 60,00",
         imagem: LA06
     },

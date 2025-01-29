@@ -50,7 +50,7 @@ export const GeneralData = [
     {
         id: 2,
         titulo: "Harry Potter 1",
-        descricao: "E a Pedra Filosofal, o início de uma das sagas sagas mais aplaudidas.",
+        descricao: "E a Pedra Filosofal, o início de uma das sagas mais aplaudidas.",
         preco: "R$ 20,00",
         resumo: 'Quando virou o envelope, com a mão trêmula, Harry viu um lacre de cera púrpura com um brasão; um leão, uma águia, um texugo e uma cobra circulando uma grande letra "H". Harry Potter nunca havia ouvido falar de Hogwarts quando as cartas começaram a aparecer no capacho da Rua dos Alfeneiros, nº 4. Escritos a tinta verde-esmeralda em pergaminho amarelado com um lacre de cera púrpura, as cartas eram rapidamente confiscadas por seus pavorosos tio e tia. Então, no aniversário de onze anos de Harry, um gigante com olhos que luziam como besouros negros chamado Rúbeo Hagrid surge com notícias surpreendentes: Harry Potter é um bruxo e tem uma vaga na Escola de Magia e Bruxaria de Hogwarts. Uma incrível aventura está para começar!',
         imagem: L03
@@ -236,7 +236,7 @@ export const GeneralData = [
     {
         id: 105,
         titulo: "As Crônicas de Nárnia",
-        descricao: "Embarque nessa também e não espere por outra oportunidade de viver",
+        descricao: "Embarque nessa aventura também e não espere por outra oportunidade de viver",
         preco: "R$ 60,00",
         resumo: 'O Leão, a Feiticeira e o Guarda-roupa conta a história dos irmãos Pedro, Susana, Edmundo e Lúcia Pevensie. Em meio a brincadeiras na casa de um velho professor, eles descobrem um misterioso guarda-roupa que os leva a Nárnia, um reino mágico que sofre de um inverno sem fim desde que Jadis, a temida Feiticeira Branca, tomou o poder. Mas uma antiga profecia ― que envolve justamente quatro crianças, além de um fantástico leão chamado Aslan ― afirma que há esperança para o reino, contanto que se tenha coragem.',
         imagem: LA06
