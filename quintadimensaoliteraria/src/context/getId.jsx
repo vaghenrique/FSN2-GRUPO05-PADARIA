@@ -7,6 +7,10 @@ const getId = createSlice({
         ReceberId: (state, id) =>{
             state.valor  = id.payload;
             console.log(state.valor);
+            window.scrollTo({
+                behavior: "instant",
+                top: 160
+            })
         },
     },
 });
