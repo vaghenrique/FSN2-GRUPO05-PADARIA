@@ -16,9 +16,15 @@ import Icon2 from '../assets/img/icon-BookCard02.png';
 import Icon3 from '../assets/img/icon-BookCard03.png';
 
 
+// import { ReceberId } from "../context/getId";
+// import { useDispatch, useSelector } from "react-redux";
+
 import '../styles/Home.css';
 
 function Home(){
+    // const valor = useSelector((state) => state.id.valor);
+    // const dispatch = useDispatch();
+
     return(
         <div>
 
@@ -72,6 +78,8 @@ function Home(){
                     label="Button Card"
                 />
             </div>
+
+            
         </div>
     );
 }

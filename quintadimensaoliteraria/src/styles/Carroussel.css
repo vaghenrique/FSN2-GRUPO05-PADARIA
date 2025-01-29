@@ -10,6 +10,10 @@
 } */
 
 
+.LinkCard{
+    text-decoration: none;
+}
+
 .conteiner{
     width: 100%;
     display: flex;

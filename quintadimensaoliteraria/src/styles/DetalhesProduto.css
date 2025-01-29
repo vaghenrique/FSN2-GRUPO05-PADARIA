@@ -1,0 +1,129 @@
+.detalhes-produto {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .detalhes-produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .detalhes-produto h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .detalhes-produto p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .detalhes-produto button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    opacity: 0.8;
+    background-color: #800000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .detalhes-produto button:hover {
+    background-color: #800000;
+    opacity: 1.5;
+  }
+
+
+
+/* Feature de style */
+.ProdutoDetalhe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2%;
+}
+.ImagemProd{
+  position: relative;
+  width: calc(53% - 100px);
+  background-color: #800000;
+  border-radius: 0% 50% 50% 0 ;
+  padding: 50px;
+  min-height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ImagemProd img{
+  width: 90%;
+}
+.DescProd{
+  width: 42%;
+  margin-right: 3%;
+}
+.DescProd .title{
+  font-size: 3rem;
+  margin-bottom: 14px;
+}
+.DescProd h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 1.6rem;
+  color: #888;
+}
+.DescProd p{
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: #666;
+  margin: 8px;
+}
+
+@media screen and (max-width: 900px){
+  .ProdutoDetalhe{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .ImagemProd{
+    border-radius: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .ImagemProd img{
+    width: 60%;
+  }
+
+  .DescProd{
+    width: 80%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .DescProd .title{
+    font-size: 2rem;
+  }
+  .DescProd h2{
+    font-size: 1.4rem;
+  }
+  .DescProd button{
+    font-size: 1rem;
+  }
+
+  .ImagemProd img{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .DescProd .title{
+    font-size: 1.4rem;
+  }
+  .DescProd h2{
+    font-size: 1rem;
+  }
+}

@@ -13,6 +13,7 @@ import R02 from './assets/img/icon-instagram.png';
 import R03 from './assets/img/icon-linkedin.png';
 import R04 from './assets/img/icon-github.png';
 import R05 from './assets/img/icon-email.png';
+import DetalhesProduto from './componentes/DetalhesProduto';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/OtherPage' element={<OtherPage/>}/>
           <Route path='/OtherPage2' element={<Home/>}/>
+          <Route path='/Livrodetalhe' element={<DetalhesProduto/>}/>
         </Routes>
         <Footer
             title="5ª Dimensão Literária"

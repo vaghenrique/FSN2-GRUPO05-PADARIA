@@ -2,10 +2,16 @@ import React, {useState} from "react";
 import iconPesquisa from '../assets/img/icon-search.png';
 import { GeneralData } from "../assets/Data/GeneralData";
 import CardPromo from "./CardPromo";
-
+import { Link } from "react-router-dom";
 import '../styles/Pesquisa.css';
 
+import { ReceberId } from "../context/getId";
+import { useDispatch, useSelector } from "react-redux";
+
 function Pesquisa(){
+    const valor = useSelector((state) => state.id.valor);
+    const dispatch = useDispatch();
+
     const [pesquisa, setpesquisa] = useState('');
 
     const pesquisaLowerCase = typeof pesquisa === 'string' ? pesquisa.toLowerCase() : '';
@@ -25,12 +31,15 @@ function Pesquisa(){
 
             <div className="Cards Hide">
                 {livros.map((d) => (
-                    <CardPromo key={d.id}
-                        titulo={d.titulo}
-                        descricao={d.descricao}
-                        preco={d.preco}
-                        imagem={d.imagem}
-                    />
+                     <Link to={`/Livrodetalhe`} key={d.id} className="LinkCard">
+                        <CardPromo Onclick={() => {dispatch(ReceberId(d.id))}}
+                            key={d.id}
+                            titulo={d.titulo}
+                            descricao={d.descricao}
+                            imagem={d.imagem}
+                            preco={d.preco}
+                        />
+                    </Link>
                 ))}
             </div>
         </div>

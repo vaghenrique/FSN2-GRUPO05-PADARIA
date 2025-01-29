@@ -8,10 +8,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";   
 import '../styles/Carroussel.css';
 
-
 import '../styles/Carroussel.css';
 
+import { ReceberId } from "../context/getId";
+import { useDispatch, useSelector } from "react-redux";
+
+import {Link} from 'react-router-dom';
+
 function Carroussel({Data, titulo}){
+  const valor = useSelector((state) => state.id.valor);
+  const dispatch = useDispatch();
+
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -72,6 +79,8 @@ function Carroussel({Data, titulo}){
           ]
     };
 
+    
+
     return(
         <div className="t" >
             <br/>
@@ -84,15 +93,19 @@ function Carroussel({Data, titulo}){
             
         <div className="slider">
             <Slider {...settings}>
+              
                 {Data.map((d) => (
-                    <CardPromo className="cardC"
+                  <Link to={`/Livrodetalhe`} key={d.id} className="LinkCard">
+                    <CardPromo className="cardC" Onclick={() => {dispatch(ReceberId(d.id))}}
                         key={d.id}
                         titulo={d.titulo}
                         descricao={d.descricao}
                         imagem={d.imagem}
                         preco={d.preco}
                     />
+                    </Link>
                 ))}
+                
             </Slider>
                 
         </div>

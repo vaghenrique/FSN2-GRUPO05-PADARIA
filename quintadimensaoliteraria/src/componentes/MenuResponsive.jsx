@@ -25,8 +25,8 @@ function MenuResponsive(){
 
             <div className={classe} id="MenuR">    
                 <LinkA Href="/" text="Home" cor="claro" />
-                <LinkA Href="/" text="OtherPage" cor="claro" />
-                <LinkA Href="/" text="OtherPage2" cor="claro" />
+                <LinkA Href="/OtherPage" text="OtherPage" cor="claro" />
+                <LinkA Href="/OtherPage2" text="OtherPage2" cor="claro" />
                 <div className="Mobile">
                     <div>
                         <button className="buttons"><img src={count} alt="icon-perfil" /></button>&nbsp; &nbsp;
